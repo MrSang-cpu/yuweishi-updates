@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>寓卫士 · 项目进度监管</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Yuweishi Progress</p>
+    <h1>寓卫士项目进度监管</h1>
+    <p class="lead">最近提交时间 2026-09-19 02:32:45 +0800 ｜ 页面生成时间 2026-09-19 02:33:00</p>
+    <nav>
+      <a href="#overview">概览</a>
+      <a href="#iterations">迭代说明</a>
+      <a href="#timeline">提交记录</a>
+      <a href="#tree">目录结构</a>
+      <a href="#apis">接口清单</a>
+      <a href="#excerpts">框架代码</a>
+    </nav>
+  </header>
+  <main>
+    <section id="overview" class="kpis">
+      <div><b>8</b><span>累计提交</span></div>
+      <div><b>8</b><span>近 7 天提交</span></div>
+      <div><b>1</b><span>今日提交</span></div>
+      <div><b>197</b><span>源码文件</span></div>
+      <div><b>180</b><span>Java 文件</span></div>
+      <div><b>105</b><span>HTTP 接口</span></div>
+    </section>
+    <article class="card">
+      <h2>模块活跃度</h2>
+      <table>
+        <thead><tr><th>模块</th><th>最近提交时间</th><th>提交数</th><th>Java 文件</th><th>代码行数</th></tr></thead>
+        <tbody><tr><td>yuweishi-common</td><td>2026-09-17 23:40:10 +0800</td><td>2</td><td>30</td><td>506</td></tr><tr><td>yuweishi-iot</td><td>2026-09-19 02:32:45 +0800</td><td>4</td><td>10</td><td>1074</td></tr><tr><td>yuweishi-boot</td><td>2026-09-19 02:32:45 +0800</td><td>4</td><td>140</td><td>7290</td></tr></tbody>
+      </table>
+    </article>
+    <article class="card">
+      <h2>功能包清单</h2>
+      <h3>数据仓储（52）</h3><div class='chips'><span class='chip'>AccountRepository</span><span class='chip'>AccountSettingRepository</span><span class='chip'>AdminMemberDeviceRepository</span><span class='chip'>AdminMemberRepository</span><span class='chip'>AlarmEventRepository</span><span class='chip'>AlarmSettingRepository</span><span class='chip'>AppMessageRepository</span><span class='chip'>BankCardRepository</span><span class='chip'>DeviceAuthUserRepository</span><span class='chip'>DeviceBrandRepository</span><span class='chip'>DeviceGroupRepository</span><span class='chip'>DeviceLinkRepository</span><span class='chip'>DevicePriceRepository</span><span class='chip'>DeviceRepository</span><span class='chip'>DeviceTransferRepository</span><span class='chip'>ExportTaskRepository</span><span class='chip'>FirmwareRepository</span><span class='chip'>IdVerifyRepository</span><span class='chip'>IncomeRecordRepository</span><span class='chip'>JointRefundDeviceRepository</span><span class='chip'>JointRefundRepository</span><span class='chip'>LockAttendConfigRepository</span><span class='chip'>LockAttendRecordRepository</span><span class='chip'>LockCredentialRepository</span><span class='chip'>LockPassagePeriodRepository</span><span class='chip'>LockRecordRepository</span><span class='chip'>LockSettingRepository</span><span class='chip'>LoginLogRepository</span><span class='chip'>MeterBillRepository</span><span class='chip'>MeterReadingRepository</span><span class='chip'>MeterRecordRepository</span><span class='chip'>MeterSettingRepository</span><span class='chip'>NotifySettingRepository</span><span class='chip'>OperationLogRepository</span><span class='chip'>PlatformAdminRepository</span><span class='chip'>PosterTemplateRepository</span><span class='chip'>PriceTemplateRepository</span><span class='chip'>RechargeOrderRepository</span><span class='chip'>RoomRepository</span><span class='chip'>ServiceFeeConfigRepository</span><span class='chip'>SmsBalanceRepository</span><span class='chip'>SmsRecordRepository</span><span class='chip'>SmsTemplateRepository</span><span class='chip'>StaffAuthDeviceRepository</span><span class='chip'>StaffAuthRepository</span><span class='chip'>SysUserRepository</span><span class='chip'>ThirdPartyBindingRepository</span><span class='chip'>TtlockUserBindRepository</span><span class='chip'>VendorConfigRepository</span><span class='chip'>WalletRepository</span><span class='chip'>WalletTxnRepository</span><span class='chip'>WithdrawOrderRepository</span></div><h3>定时任务（1）</h3><div class='chips'><span class='chip'>AlarmScanTask</span></div><h3>业务服务（11）</h3><div class='chips'><span class='chip'>AuthService</span><span class='chip'>BizService</span><span class='chip'>DeviceAccessService</span><span class='chip'>DeviceService</span><span class='chip'>GroupService</span><span class='chip'>LockService</span><span class='chip'>MemberService</span><span class='chip'>MeterService</span><span class='chip'>PlatformService</span><span class='chip'>TtlockAccountService</span><span class='chip'>WalletService</span></div><h3>数据实体（52）</h3><div class='chips'><span class='chip'>Account</span><span class='chip'>AccountSetting</span><span class='chip'>AdminMember</span><span class='chip'>AdminMemberDevice</span><span class='chip'>AlarmEvent</span><span class='chip'>AlarmSetting</span><span class='chip'>AppMessage</span><span class='chip'>BankCard</span><span class='chip'>Device</span><span class='chip'>DeviceAuthUser</span><span class='chip'>DeviceBrand</span><span class='chip'>DeviceGroup</span><span class='chip'>DeviceLink</span><span class='chip'>DevicePrice</span><span class='chip'>DeviceTransfer</span><span class='chip'>ExportTask</span><span class='chip'>Firmware</span><span class='chip'>IdVerify</span><span class='chip'>IncomeRecord</span><span class='chip'>JointRefund</span><span class='chip'>JointRefundDevice</span><span class='chip'>LockAttendConfig</span><span class='chip'>LockAttendRecord</span><span class='chip'>LockCredential</span><span class='chip'>LockPassagePeriod</span><span class='chip'>LockRecord</span><span class='chip'>LockSetting</span><span class='chip'>LoginLog</span><span class='chip'>MeterBill</span><span class='chip'>MeterReading</span><span class='chip'>MeterRecord</span><span class='chip'>MeterSetting</span><span class='chip'>NotifySetting</span><span class='chip'>OperationLog</span><span class='chip'>PlatformAdmin</span><span class='chip'>PosterTemplate</span><span class='chip'>PriceTemplate</span><span class='chip'>RechargeOrder</span><span class='chip'>Room</span><span class='chip'>ServiceFeeConfig</span><span class='chip'>SmsBalance</span><span class='chip'>SmsRecord</span><span class='chip'>SmsTemplate</span><span class='chip'>StaffAuth</span><span class='chip'>StaffAuthDevice</span><span class='chip'>SysUser</span><span class='chip'>ThirdPartyBinding</span><span class='chip'>TtlockUserBind</span><span class='chip'>VendorConfig</span><span class='chip'>Wallet</span><span class='chip'>WalletTxn</span><span class='chip'>WithdrawOrder</span></div><h3>设备回调接口（1）</h3><div class='chips'><span class='chip'>IotCallbackController</span></div><h3>APP 接口（9）</h3><div class='chips'><span class='chip'>AuthController</span><span class='chip'>DeviceController</span><span class='chip'>LockController</span><span class='chip'>MeterController</span><span class='chip'>MineController</span><span class='chip'>OrgController</span><span class='chip'>PayController</span><span class='chip'>TtlockGatewayController</span><span class='chip'>WalletController</span></div><h3>管理后台接口（1）</h3><div class='chips'><span class='chip'>AdminController</span></div><h3>门锁适配（7）</h3><div class='chips'><span class='chip'>BleGenericLockAdapter</span><span class='chip'>HuiXiangJiaCloudAdapter</span><span class='chip'>LockAdapterFactory</span><span class='chip'>LockCloudAdapter</span><span class='chip'>TtlockCloudAdapter</span><span class='chip'>TtlockRemotePolicy</span><span class='chip'>TtlockRemotePolicyTest</span></div><h3>水电表适配（2）</h3><div class='chips'><span class='chip'>MeterDeviceGateway</span><span class='chip'>YuweishiMeterGateway</span></div><h3>领域枚举（18）</h3><div class='chips'><span class='chip'>AlarmType</span><span class='chip'>AuditStatus</span><span class='chip'>CredentialKind</span><span class='chip'>CredentialStatus</span><span class='chip'>CredentialType</span><span class='chip'>DeviceKind</span><span class='chip'>FeeBearer</span><span class='chip'>LockVendor</span><span class='chip'>OnlineStatus</span><span class='chip'>OrderStatus</span><span class='chip'>PayChannel</span><span class='chip'>PayMode</span><span class='chip'>PriceType</span><span class='chip'>RoomStatus</span><span class='chip'>SwitchState</span><span class='chip'>UnlockMethod</span><span class='chip'>UserRole</span><span class='chip'>WalletTxnType</span></div>
+    </article>
+    <section id="iterations">
+      <h2 class="section">迭代说明</h2>
+      <article class='card'><h2>2026-09-19  补齐与通通锁规则不一致的框架行为</h2><h3>更新内容</h3><ul><li>未连网关的门锁不再按 15 分钟心跳报离线；已连网关超过 30 分钟无信号才报离线</li><li>设备转让会清掉原账号的授权用户、钥匙/密码、员工和管理员授权，并解除原网关关联</li><li>慧享佳、蓝牙通用锁未配置或本期不支持时改为失败，不再返回模拟成功</li><li>新建门锁默认关闭远程开锁</li></ul></article><article class='card'><h2>2026-09-17  通通锁接入框架按官方模型调整</h2><h3>更新内容</h3><ul><li>加锁改为 App SDK 上传 `lockData`，当前用户成为锁管理员</li><li>近场开锁改为蓝牙 SDK 完成后上报，服务端不再拿近场请求去打 Cloud API</li><li>远程开锁必须已连通通锁网关且打开远程开关，未配置密钥时不再返回模拟成功</li><li>新增通通锁用户映射、网关登记、蓝牙钥匙会话接口</li></ul></article><article class='card'><h2>2026-09-16 18:09  服务端第一期可用能力</h2><h3>登录与权限</h3><ul><li>支持房东注册、验证码/密码登录、退出登录</li><li>子管理员、授权员工只能操作被分配的设备</li><li>短信验证码有时效，正式环境不再回传验证码</li></ul><h3>水电表</h3><ul><li>设备上报剩余量、用量、电压电流和开关状态</li><li>预付费欠费时，水表欠费只联动电表拉闸，不会关闭门锁</li><li>远程指令改为排队下发，避免后一条覆盖前一条</li></ul><h3>充值、提现与设备转让</h3><ul><li>在线充值先生成待支付订单，支付成功后再入账并下发充值</li><li>钱包提现先冻结金额，需管理后台审核</li><li>设备转让改为过户到受让房东，不再删除设备</li></ul><h3>门锁与告警</h3><ul><li>通通锁、慧享佳云回调会写入开锁记录并更新在线状态</li><li>支持蓝牙通用锁由 App 近场转发指令</li><li>定时扫描离线、低电、欠费，并写入告警与站内消息</li></ul></article>
+    </section>
+    <section id="timeline">
+      <article class="card">
+        <h2>提交记录</h2>
+        <ul class="timeline"><li><div class='when'>2026-09-19 02:32:45 +0800</div><div class='subj'>Stop treating unlinked locks as offline and drop mock lock success. <span class='sha'>d9bbe53a6d</span></div><div class='files'><code>M CHANGELOG.md</code><code>M README.md</code><code>M &quot;docs/PRD-\345\257\223\345\215\253\345\243\253\344\272\247\345\223\201\351\234\200\346\261\202\350\257\264\346\230\216\344\271\246.md&quot;</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/AdminMemberDeviceRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/StaffAuthDeviceRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/schedule/AlarmScanTask.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/service/BizService.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/service/DeviceService.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/support/DataInitializer.java</code><code>M yuweishi-iot/src/main/java/com/yuweishi/iot/lock/BleGenericLockAdapter.java</code><code>M yuweishi-iot/src/main/java/com/yuweishi/iot/lock/HuiXiangJiaCloudAdapter.java</code></div></li><li><div class='when'>2026-09-17 23:40:10 +0800</div><div class='subj'>Align lock framework with TTLock BLE SDK and gateway Cloud API. <span class='sha'>3ccab82ff2</span></div><div class='files'><code>M CHANGELOG.md</code><code>M README.md</code><code>A &quot;docs/PRD-\345\257\223\345\215\253\345\243\253\344\272\247\345\223\201\351\234\200\346\261\202\350\257\264\346\230\216\344\271\246.md&quot;</code><code>M yuweishi-boot/src/main/java/com/yuweishi/domain/entity/Device.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/domain/entity/LockCredential.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/domain/entity/TtlockUserBind.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/repository/TtlockUserBindRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/service/AuthService.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/service/DeviceService.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/service/LockService.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/service/TtlockAccountService.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/support/DataInitializer.java</code><div class='more'>+14 个文件</div></div></li><li><div class='when'>2026-09-16 19:48:03 +0800</div><div class='subj'>Enrich the public progress page with timeline, tree and framework excerpts. <span class='sha'>18874ba0bd</span></div><div class='files'><code>M CHANGELOG.md</code><code>M README.md</code><code>M tools/release-site/build.py</code></div></li><li><div class='when'>2026-09-16 19:36:36 +0800</div><div class='subj'>Publish a public changelog site from CHANGELOG without sharing source. <span class='sha'>81eba211a7</span></div><div class='files'><code>A .github/workflows/publish-release-notes.yml</code><code>M .gitignore</code><code>A CHANGELOG.md</code><code>M README.md</code><code>A tools/release-site/build.py</code></div></li><li><div class='when'>2026-09-16 19:21:45 +0800</div><div class='subj'>Document withdraw audit on the admin API list. <span class='sha'>2b1adda2ae</span></div><div class='files'><code>M README.md</code></div></li><li><div class='when'>2026-09-16 19:21:12 +0800</div><div class='subj'>Tighten auth, meter reporting, payment confirmation, lock callbacks and withdraw audit. <span class='sha'>b9f419bf5a</span></div><div class='files'><code>M README.md</code><code>M yuweishi-boot/src/main/java/com/yuweishi/config/SecurityConfig.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/config/WebConfig.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/domain/entity/Device.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/domain/entity/DeviceTransfer.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/domain/entity/StaffAuth.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/AccountSettingRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/AdminMemberDeviceRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/AdminMemberRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/AlarmEventRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/AppMessageRepository.java</code><code>M yuweishi-boot/src/main/java/com/yuweishi/repository/DeviceAuthUserRepository.java</code><div class='more'>+33 个文件</div></div></li><li><div class='when'>2026-09-16 17:17:10 +0800</div><div class='subj'>Update README.md <span class='sha'>1c2b38a78b</span></div><div class='files'><code>M README.md</code></div></li><li><div class='when'>2026-09-16 16:55:45 +0800</div><div class='subj'>初始化寓卫士公寓物联网 Spring Boot 服务端框架，覆盖门锁双品牌、自研水电表、APP 与管理后台。 <span class='sha'>e7ce146bbe</span></div><div class='files'><code>A .gitignore</code><code>A README.md</code><code>A docker-compose.yml</code><code>A pom.xml</code><code>A sql/init-mysql.sql</code><code>A tools/gen_boot.py</code><code>A yuweishi-boot/pom.xml</code><code>A yuweishi-boot/src/main/java/com/yuweishi/YuweishiApplication.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/config/GlobalExceptionHandler.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/config/SecurityConfig.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/config/WebConfig.java</code><code>A yuweishi-boot/src/main/java/com/yuweishi/domain/BaseEntity.java</code><div class='more'>+168 个文件</div></div></li></ul>
+      </article>
+    </section>
+    <section id="tree">
+      <article class="card">
+        <h2>仓库目录结构</h2>
+        <p class="hint">共 197 个文件，可用于核对模块是否按计划落地。</p>
+        <pre class="tree">├─ .github/
+│  └─ workflows/
+│     └─ publish-release-notes.yml
+├─ docs/
+│  └─ PRD-寓卫士产品需求说明书.md
+├─ sql/
+│  └─ init-mysql.sql
+├─ tools/
+│  ├─ release-site/
+│  │  └─ build.py
+│  └─ gen_boot.py
+├─ yuweishi-boot/
+│  ├─ src/
+│  │  ├─ main/
+│  │  │  ├─ java/
+│  │  │  │  └─ com/
+│  │  │  │     └─ yuweishi/
+│  │  │  │        ├─ config/
+│  │  │  │        │  ├─ GlobalExceptionHandler.java
+│  │  │  │        │  ├─ SecurityConfig.java
+│  │  │  │        │  └─ WebConfig.java
+│  │  │  │        ├─ domain/
+│  │  │  │        │  ├─ entity/
+│  │  │  │        │  │  ├─ Account.java
+│  │  │  │        │  │  ├─ AccountSetting.java
+│  │  │  │        │  │  ├─ AdminMember.java
+│  │  │  │        │  │  ├─ AdminMemberDevice.java
+│  │  │  │        │  │  ├─ AlarmEvent.java
+│  │  │  │        │  │  ├─ AlarmSetting.java
+│  │  │  │        │  │  ├─ AppMessage.java
+│  │  │  │        │  │  ├─ BankCard.java
+│  │  │  │        │  │  ├─ Device.java
+│  │  │  │        │  │  ├─ DeviceAuthUser.java
+│  │  │  │        │  │  ├─ DeviceBrand.java
+│  │  │  │        │  │  ├─ DeviceGroup.java
+│  │  │  │        │  │  ├─ DeviceLink.java
+│  │  │  │        │  │  ├─ DevicePrice.java
+│  │  │  │        │  │  ├─ DeviceTransfer.java
+│  │  │  │        │  │  ├─ ExportTask.java
+│  │  │  │        │  │  ├─ Firmware.java
+│  │  │  │        │  │  ├─ IdVerify.java
+│  │  │  │        │  │  ├─ IncomeRecord.java
+│  │  │  │        │  │  ├─ JointRefund.java
+│  │  │  │        │  │  ├─ JointRefundDevice.java
+│  │  │  │        │  │  ├─ LockAttendConfig.java
+│  │  │  │        │  │  ├─ LockAttendRecord.java
+│  │  │  │        │  │  ├─ LockCredential.java
+│  │  │  │        │  │  ├─ LockPassagePeriod.java
+│  │  │  │        │  │  ├─ LockRecord.java
+│  │  │  │        │  │  ├─ LockSetting.java
+│  │  │  │        │  │  ├─ LoginLog.java
+│  │  │  │        │  │  ├─ MeterBill.java
+│  │  │  │        │  │  ├─ MeterReading.java
+│  │  │  │        │  │  ├─ MeterRecord.java
+│  │  │  │        │  │  ├─ MeterSetting.java
+│  │  │  │        │  │  ├─ NotifySetting.java
+│  │  │  │        │  │  ├─ OperationLog.java
+│  │  │  │        │  │  ├─ PlatformAdmin.java
+│  │  │  │        │  │  ├─ PosterTemplate.java
+│  │  │  │        │  │  ├─ PriceTemplate.java
+│  │  │  │        │  │  ├─ RechargeOrder.java
+│  │  │  │        │  │  ├─ Room.java
+│  │  │  │        │  │  ├─ ServiceFeeConfig.java
+│  │  │  │        │  │  ├─ SmsBalance.java
+│  │  │  │        │  │  ├─ SmsRecord.java
+│  │  │  │        │  │  ├─ SmsTemplate.java
+│  │  │  │        │  │  ├─ StaffAuth.java
+│  │  │  │        │  │  ├─ StaffAuthDevice.java
+│  │  │  │        │  │  ├─ SysUser.java
+│  │  │  │        │  │  ├─ ThirdPartyBinding.java
+│  │  │  │        │  │  ├─ TtlockUserBind.java
+│  │  │  │        │  │  ├─ VendorConfig.java
+│  │  │  │        │  │  ├─ Wallet.java
+│  │  │  │        │  │  ├─ WalletTxn.java
+│  │  │  │        │  │  └─ WithdrawOrder.java
+│  │  │  │        │  └─ BaseEntity.java
+│  │  │  │        ├─ repository/
+│  │  │  │        │  ├─ AccountRepository.java
+│  │  │  │        │  ├─ AccountSettingRepository.java
+│  │  │  │        │  ├─ AdminMemberDeviceRepository.java
+│  │  │  │        │  ├─ AdminMemberRepository.java
+│  │  │  │        │  ├─ AlarmEventRepository.java
+│  │  │  │        │  ├─ AlarmSettingRepository.java
+│  │  │  │        │  ├─ AppMessageRepository.java
+│  │  │  │        │  ├─ BankCardRepository.java
+│  │  │  │        │  ├─ DeviceAuthUserRepository.java
+│  │  │  │        │  ├─ DeviceBrandRepository.java
+│  │  │  │        │  ├─ DeviceGroupRepository.java
+│  │  │  │        │  ├─ DeviceLinkRepository.java
+│  │  │  │        │  ├─ DevicePriceRepository.java
+│  │  │  │        │  ├─ DeviceRepository.java
+│  │  │  │        │  ├─ DeviceTransferRepository.java
+│  │  │  │        │  ├─ ExportTaskRepository.java
+│  │  │  │        │  ├─ FirmwareRepository.java
+│  │  │  │        │  ├─ IdVerifyRepository.java
+│  │  │  │        │  ├─ IncomeRecordRepository.java
+│  │  │  │        │  ├─ JointRefundDeviceRepository.java
+│  │  │  │        │  ├─ JointRefundRepository.java
+│  │  │  │        │  ├─ LockAttendConfigRepository.java
+│  │  │  │        │  ├─ LockAttendRecordRepository.java
+│  │  │  │        │  ├─ LockCredentialRepository.java
+│  │  │  │        │  ├─ LockPassagePeriodRepository.java
+│  │  │  │        │  ├─ LockRecordRepository.java
+│  │  │  │        │  ├─ LockSettingRepository.java
+│  │  │  │        │  ├─ LoginLogRepository.java
+│  │  │  │        │  ├─ MeterBillRepository.java
+│  │  │  │        │  ├─ MeterReadingRepository.java
+│  │  │  │        │  ├─ MeterRecordRepository.java
+│  │  │  │        │  ├─ MeterSettingRepository.java
+│  │  │  │        │  ├─ NotifySettingRepository.java
+│  │  │  │        │  ├─ OperationLogRepository.java
+│  │  │  │        │  ├─ PlatformAdminRepository.java
+│  │  │  │        │  ├─ PosterTemplateRepository.java
+│  │  │  │        │  ├─ PriceTemplateRepository.java
+│  │  │  │        │  ├─ RechargeOrderRepository.java
+│  │  │  │        │  ├─ RoomRepository.java
+│  │  │  │        │  ├─ ServiceFeeConfigRepository.java
+│  │  │  │        │  ├─ SmsBalanceRepository.java
+│  │  │  │        │  ├─ SmsRecordRepository.java
+│  │  │  │        │  ├─ SmsTemplateRepository.java
+│  │  │  │        │  ├─ StaffAuthDeviceRepository.java
+│  │  │  │        │  ├─ StaffAuthRepository.java
+│  │  │  │        │  ├─ SysUserRepository.java
+│  │  │  │        │  ├─ ThirdPartyBindingRepository.java
+│  │  │  │        │  ├─ TtlockUserBindRepository.java
+│  │  │  │        │  ├─ VendorConfigRepository.java
+│  │  │  │        │  ├─ WalletRepository.java
+│  │  │  │        │  ├─ WalletTxnRepository.java
+│  │  │  │        │  └─ WithdrawOrderRepository.java
+│  │  │  │        ├─ schedule/
+│  │  │  │        │  └─ AlarmScanTask.java
+│  │  │  │        ├─ security/
+│  │  │  │        │  ├─ JwtAuthFilter.java
+│  │  │  │        │  └─ SecurityUtils.java
+│  │  │  │        ├─ service/
+│  │  │  │        │  ├─ AuthService.java
+│  │  │  │        │  ├─ BizService.java
+│  │  │  │        │  ├─ DeviceAccessService.java
+│  │  │  │        │  ├─ DeviceService.java
+│  │  │  │        │  ├─ GroupService.java
+│  │  │  │        │  ├─ LockService.java
+│  │  │  │        │  ├─ MemberService.java
+│  │  │  │        │  ├─ MeterService.java
+│  │  │  │        │  ├─ PlatformService.java
+│  │  │  │        │  ├─ TtlockAccountService.java
+│  │  │  │        │  └─ WalletService.java
+│  │  │  │        ├─ support/
+│  │  │  │        │  ├─ DataInitializer.java
+│  │  │  │        │  └─ TtlCache.java
+│  │  │  │        ├─ web/
+│  │  │  │        │  ├─ admin/
+│  │  │  │        │  │  └─ AdminController.java
+│  │  │  │        │  ├─ app/
+│  │  │  │        │  │  ├─ AuthController.java
+│  │  │  │        │  │  ├─ DeviceController.java
+│  │  │  │        │  │  ├─ LockController.java
+│  │  │  │        │  │  ├─ MeterController.java
+│  │  │  │        │  │  ├─ MineController.java
+│  │  │  │        │  │  ├─ OrgController.java
+│  │  │  │        │  │  ├─ PayController.java
+│  │  │  │        │  │  ├─ TtlockGatewayController.java
+│  │  │  │        │  │  └─ WalletController.java
+│  │  │  │        │  ├─ dto/
+│  │  │  │        │  │  ├─ AuthDtos.java
+│  │  │  │        │  │  └─ LockDtos.java
+│  │  │  │        │  └─ iot/
+│  │  │  │        │     └─ IotCallbackController.java
+│  │  │  │        └─ YuweishiApplication.java
+│  │  │  └─ resources/
+│  │  │     ├─ application-dev.yml
+│  │  │     ├─ application-prod.yml
+│  │  │     └─ application.yml
+│  │  └─ test/
+│  │     └─ java/
+│  │        └─ com/
+│  │           └─ yuweishi/
+│  │              ├─ iot/
+│  │              │  └─ lock/
+│  │              │     └─ TtlockRemotePolicyTest.java
+│  │              └─ YuweishiApplicationTests.java
+│  └─ pom.xml
+├─ yuweishi-common/
+│  ├─ src/
+│  │  └─ main/
+│  │     └─ java/
+│  │        └─ com/
+│  │           └─ yuweishi/
+│  │              └─ common/
+│  │                 ├─ api/
+│  │                 │  ├─ PageQuery.java
+│  │                 │  ├─ PageResult.java
+│  │                 │  └─ R.java
+│  │                 ├─ constant/
+│  │                 │  └─ AppConstants.java
+│  │                 ├─ enums/
+│  │                 │  ├─ AlarmType.java
+│  │                 │  ├─ AuditStatus.java
+│  │                 │  ├─ CredentialKind.java
+│  │                 │  ├─ CredentialStatus.java
+│  │                 │  ├─ CredentialType.java
+│  │                 │  ├─ DeviceKind.java
+│  │                 │  ├─ FeeBearer.java
+│  │                 │  ├─ LockVendor.java
+│  │                 │  ├─ OnlineStatus.java
+│  │                 │  ├─ OrderStatus.java
+│  │                 │  ├─ PayChannel.java
+│  │                 │  ├─ PayMode.java
+│  │                 │  ├─ PriceType.java
+│  │                 │  ├─ RoomStatus.java
+│  │                 │  ├─ SwitchState.java
+│  │                 │  ├─ UnlockMethod.java
+│  │                 │  ├─ UserRole.java
+│  │                 │  └─ WalletTxnType.java
+│  │                 ├─ exception/
+│  │                 │  ├─ BizException.java
+│  │                 │  └─ ErrorCode.java
+│  │                 ├─ json/
+│  │                 │  └─ Jsons.java
+│  │                 ├─ security/
+│  │                 │  ├─ JwtProperties.java
+│  │                 │  ├─ JwtTokenService.java
+│  │                 │  └─ LoginUser.java
+│  │                 └─ util/
+│  │                    ├─ Digests.java
+│  │                    └─ Ids.java
+│  └─ pom.xml
+├─ yuweishi-iot/
+│  ├─ src/
+│  │  └─ main/
+│  │     └─ java/
+│  │        └─ com/
+│  │           └─ yuweishi/
+│  │              └─ iot/
+│  │                 ├─ config/
+│  │                 │  └─ IotClientConfig.java
+│  │                 ├─ lock/
+│  │                 │  ├─ BleGenericLockAdapter.java
+│  │                 │  ├─ HuiXiangJiaCloudAdapter.java
+│  │                 │  ├─ LockAdapterFactory.java
+│  │                 │  ├─ LockCloudAdapter.java
+│  │                 │  ├─ TtlockCloudAdapter.java
+│  │                 │  └─ TtlockRemotePolicy.java
+│  │                 ├─ meter/
+│  │                 │  ├─ MeterDeviceGateway.java
+│  │                 │  └─ YuweishiMeterGateway.java
+│  │                 └─ sign/
+│  │                    └─ MeterSignVerifier.java
+│  └─ pom.xml
+├─ .env.example
+├─ .gitignore
+├─ CHANGELOG.md
+├─ README.md
+├─ docker-compose.yml
+└─ pom.xml</pre>
+      </article>
+    </section>
+    <section id="apis">
+      <article class="card">
+        <h2>接口清单</h2>
+        <table>
+          <thead><tr><th>方法</th><th>路径</th><th>控制器</th></tr></thead>
+          <tbody><tr><td><span class='verb get'>GET</span></td><td><code>/admin/v1/accounts</code></td><td>AdminController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/admin/v1/auth/login</code></td><td>AdminController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/admin/v1/dashboard</code></td><td>AdminController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/admin/v1/devices</code></td><td>AdminController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/admin/v1/joint-refunds</code></td><td>AdminController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/admin/v1/joint-refunds/{id}/audit</code></td><td>AdminController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/admin/v1/vendors</code></td><td>AdminController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/admin/v1/vendors</code></td><td>AdminController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/admin/v1/withdraws</code></td><td>AdminController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/admin/v1/withdraws/{id}/audit</code></td><td>AdminController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/admins</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/admins</code></td><td>OrgController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/alarms</code></td><td>MineController.java</td></tr><tr><td><span class='verb delete'>DELETE</span></td><td><code>/api/v1/auth-users/{id}</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/login</code></td><td>AuthController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/logout</code></td><td>AuthController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/password</code></td><td>AuthController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/phone</code></td><td>AuthController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/refresh</code></td><td>AuthController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/register</code></td><td>AuthController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/auth/sms-code</code></td><td>AuthController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/devices</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/devices</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/devices/counts</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/devices/transfer</code></td><td>MineController.java</td></tr><tr><td><span class='verb delete'>DELETE</span></td><td><code>/api/v1/devices/{id}</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/devices/{id}</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/devices/{id}</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/devices/{id}/auth-users</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/devices/{id}/auth-users</code></td><td>OrgController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/devices/{id}/link</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/devices/{id}/link</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/devices/{id}/room-status</code></td><td>DeviceController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/groups</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/groups</code></td><td>OrgController.java</td></tr><tr><td><span class='verb delete'>DELETE</span></td><td><code>/api/v1/groups/{id}</code></td><td>OrgController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/groups/{id}</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/groups/{id}/devices</code></td><td>OrgController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/income/summary</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/joint-refund</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/joint-refund</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/initialize</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/attend/records</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/attend/settings</code></td><td>LockController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/locks/{id}/attend/settings</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/ble-session</code></td><td>LockController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/{id}/ble-unlock</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/credentials</code></td><td>LockController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/{id}/credentials</code></td><td>LockController.java</td></tr><tr><td><span class='verb delete'>DELETE</span></td><td><code>/api/v1/locks/{id}/credentials/{cid}</code></td><td>LockController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/locks/{id}/credentials/{cid}</code></td><td>LockController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/{id}/lock-data</code></td><td>LockController.java</td></tr><tr><td><span class='verb put'>PUT</span></td><td><code>/api/v1/locks/{id}/passage-periods</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/records</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/remote-ready</code></td><td>LockController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/{id}/remote-unlock</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/locks/{id}/settings</code></td><td>LockController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/locks/{id}/settings</code></td><td>LockController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/{id}/sync</code></td><td>LockController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/locks/{id}/unlock</code></td><td>LockController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/messages</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/meters/bills/{billId}/pay</code></td><td>MeterController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/meters/price-templates</code></td><td>MeterController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/meters/price-templates</code></td><td>MeterController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/meters/{id}</code></td><td>MeterController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/meters/{id}/clear</code></td><td>MeterController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/meters/{id}/pay-mode</code></td><td>MeterController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/meters/{id}/price/deploy</code></td><td>MeterController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/meters/{id}/recharge</code></td><td>MeterController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/meters/{id}/records</code></td><td>MeterController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/meters/{id}/switch</code></td><td>MeterController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/pay/notify</code></td><td>PayController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/poster</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/poster</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/rooms</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/rooms</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/settings/alarms</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/settings/device</code></td><td>MineController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/settings/device</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/settings/notify</code></td><td>MineController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/settings/notify</code></td><td>MineController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/settings/project</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/settings/service-fee</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/settings/service-fee</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/sms/balance</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/sms/purchase</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/sms/templates</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/sms/templates</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/staff-auth</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/staff-auth</code></td><td>OrgController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/third-party/bind</code></td><td>MineController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/ttlock/gateways</code></td><td>TtlockGatewayController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/ttlock/gateways/{id}/refresh-locks</code></td><td>TtlockGatewayController.java</td></tr><tr><td><span class='verb patch'>PATCH</span></td><td><code>/api/v1/user/profile</code></td><td>MineController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/wallet</code></td><td>WalletController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/wallet/bank-card</code></td><td>WalletController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/wallet/kyc</code></td><td>WalletController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/api/v1/wallet/transactions</code></td><td>WalletController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/api/v1/wallet/withdraw</code></td><td>WalletController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/iot/v1/lock/ble/callback</code></td><td>IotCallbackController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/iot/v1/lock/huixiangjia/callback</code></td><td>IotCallbackController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/iot/v1/lock/ttlock/callback</code></td><td>IotCallbackController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/iot/v1/lock/{mac}/commands</code></td><td>IotCallbackController.java</td></tr><tr><td><span class='verb post'>POST</span></td><td><code>/iot/v1/meter/report</code></td><td>IotCallbackController.java</td></tr><tr><td><span class='verb get'>GET</span></td><td><code>/iot/v1/meter/{meterNo}/commands</code></td><td>IotCallbackController.java</td></tr></tbody>
+        </table>
+      </article>
+    </section>
+    <section id="excerpts">
+      <h2 class="section">框架代码摘录</h2>
+      <article class='card excerpt'><h3>启动入口</h3><p class='path'>yuweishi-boot/src/main/java/com/yuweishi/YuweishiApplication.java · 展示 25/25 行，其余实现未展开。</p><pre><code>package com.yuweishi;
+
+import com.yuweishi.common.security.JwtProperties;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
+import org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
+
+@SpringBootApplication(
+        scanBasePackages = &quot;com.yuweishi&quot;,
+        exclude = {RedisAutoConfiguration.class, RedisRepositoriesAutoConfiguration.class}
+)
+@EnableJpaAuditing
+@EnableAsync
+@EnableScheduling
+@EnableConfigurationProperties(JwtProperties.class)
+public class YuweishiApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(YuweishiApplication.class, args);
+    }
+}</code></pre></article><article class='card excerpt'><h3>门锁云适配器接口</h3><p class='path'>yuweishi-iot/src/main/java/com/yuweishi/iot/lock/LockCloudAdapter.java · 展示 48/140 行，其余实现未展开。</p><pre><code>package com.yuweishi.iot.lock;
+
+import com.yuweishi.common.enums.CredentialKind;
+import com.yuweishi.common.enums.LockVendor;
+import lombok.Builder;
+import lombok.Data;
+
+import java.time.LocalDateTime;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * 门锁厂商适配器。
+ * 通通锁：App SDK 负责蓝牙；本接口只封装服务端调用的 Cloud API。
+ * 远程开锁等「打到锁上」的云指令，必须由业务层先确认锁已连网关。
+ */
+public interface LockCloudAdapter {
+
+    LockVendor vendor();
+
+    default boolean cloudConfigured() {
+        return true;
+    }
+
+    /** 通通锁远程控锁依赖网关；其它品牌可返回 false。 */
+    default boolean remoteRequiresGateway() {
+        return false;
+    }
+
+    RemoteResult remoteUnlock(LockIdentity lock, String operator);
+
+    RemoteResult syncState(LockIdentity lock);
+
+    RemoteResult addCredential(LockIdentity lock, CredentialCommand command);
+
+    RemoteResult updateCredential(LockIdentity lock, CredentialCommand command);
+
+    RemoteResult deleteCredential(LockIdentity lock, CredentialKind kind, String vendorCredentialId);
+
+    RemoteResult updateSetting(LockIdentity lock, String settingKey, Map&lt;String, Object&gt; payload);
+
+    List&lt;LockRecordItem&gt; pullRecords(LockIdentity lock, LocalDateTime from, LocalDateTime to);
+
+// 敏感配置已省略
+
+    default RemoteResult initializeLock(LockIdentity operator, String lockData, String lockAlias) {
+        return RemoteResult.fail(&quot;unsupported&quot;, &quot;该品牌不支持 SDK lockData 云端初始化&quot;);
+    }</code></pre></article><article class='card excerpt'><h3>水电表网关接口</h3><p class='path'>yuweishi-iot/src/main/java/com/yuweishi/iot/meter/MeterDeviceGateway.java · 展示 55/71 行，其余实现未展开。</p><pre><code>package com.yuweishi.iot.meter;
+
+import com.yuweishi.common.enums.DeviceKind;
+import lombok.Builder;
+import lombok.Data;
+
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Map;
+
+/**
+ * 自研水电表协议适配。硬件侧通过 MQTT/HTTP 上报，服务端下发合闸/拉闸/开阀/关阀、充值、清零、电价。
+ */
+public interface MeterDeviceGateway {
+
+    RemoteResult switchControl(MeterIdentity meter, boolean on);
+
+    RemoteResult recharge(MeterIdentity meter, BigDecimal amountYuan, BigDecimal quantity);
+
+    RemoteResult clearBalance(MeterIdentity meter);
+
+    RemoteResult deployPrice(MeterIdentity meter, Map&lt;String, Object&gt; pricePayload);
+
+    RemoteResult requestRead(MeterIdentity meter);
+
+    RemoteResult ota(MeterIdentity meter, String firmwareUrl, String version);
+
+    @Data
+    @Builder
+    class MeterIdentity {
+        private Long deviceId;
+        private DeviceKind kind;
+        private String meterNo;
+        private String gatewaySn;
+        private String protocolVersion;
+    }
+
+    @Data
+    @Builder
+    class RemoteResult {
+        private boolean success;
+        private String commandId;
+        private String message;
+
+        public static RemoteResult ok(String commandId) {
+            return RemoteResult.builder().success(true).commandId(commandId).message(&quot;queued&quot;).build();
+        }
+
+        public static RemoteResult fail(String message) {
+            return RemoteResult.builder().success(false).message(message).build();
+        }
+    }
+
+    @Data
+    @Builder</code></pre></article><article class='card excerpt'><h3>门锁适配器工厂</h3><p class='path'>yuweishi-iot/src/main/java/com/yuweishi/iot/lock/LockAdapterFactory.java · 展示 28/28 行，其余实现未展开。</p><pre><code>package com.yuweishi.iot.lock;
+
+import com.yuweishi.common.enums.LockVendor;
+import com.yuweishi.common.exception.BizException;
+import org.springframework.stereotype.Component;
+
+import java.util.EnumMap;
+import java.util.List;
+import java.util.Map;
+
+@Component
+public class LockAdapterFactory {
+    private final Map&lt;LockVendor, LockCloudAdapter&gt; adapters = new EnumMap&lt;&gt;(LockVendor.class);
+
+    public LockAdapterFactory(List&lt;LockCloudAdapter&gt; list) {
+        for (LockCloudAdapter adapter : list) {
+            adapters.put(adapter.vendor(), adapter);
+        }
+    }
+
+    public LockCloudAdapter get(LockVendor vendor) {
+        LockCloudAdapter adapter = adapters.get(vendor == null ? LockVendor.TTLOCK : vendor);
+        if (adapter == null) {
+            throw new BizException(&quot;不支持的门锁品牌: &quot; + vendor);
+        }
+        return adapter;
+    }
+}</code></pre></article><article class='card excerpt'><h3>用户角色</h3><p class='path'>yuweishi-common/src/main/java/com/yuweishi/common/enums/UserRole.java · 展示 10/10 行，其余实现未展开。</p><pre><code>package com.yuweishi.common.enums;
+
+public enum UserRole {
+    OWNER,
+    SUPER_ADMIN,
+    SUB_ADMIN,
+    STAFF,
+    TENANT,
+    PLATFORM_ADMIN
+}</code></pre></article><article class='card excerpt'><h3>设备类型</h3><p class='path'>yuweishi-common/src/main/java/com/yuweishi/common/enums/DeviceKind.java · 展示 15/15 行，其余实现未展开。</p><pre><code>package com.yuweishi.common.enums;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+@Getter
+@AllArgsConstructor
+public enum DeviceKind {
+    LOCK(&quot;门锁&quot;),
+    ELECTRIC(&quot;电表&quot;),
+    WATER(&quot;水表&quot;),
+    GATEWAY(&quot;网关&quot;);
+
+    private final String label;
+}</code></pre></article><article class='card excerpt'><h3>统一响应体</h3><p class='path'>yuweishi-common/src/main/java/com/yuweishi/common/api/R.java · 展示 36/36 行，其余实现未展开。</p><pre><code>package com.yuweishi.common.api;
+
+import lombok.Data;
+
+import java.io.Serializable;
+
+@Data
+public class R&lt;T&gt; implements Serializable {
+    private int code;
+    private String message;
+    private T data;
+    private long timestamp = System.currentTimeMillis();
+
+    public static &lt;T&gt; R&lt;T&gt; ok() {
+        return ok(null);
+    }
+
+    public static &lt;T&gt; R&lt;T&gt; ok(T data) {
+        R&lt;T&gt; r = new R&lt;&gt;();
+        r.setCode(0);
+        r.setMessage(&quot;success&quot;);
+        r.setData(data);
+        return r;
+    }
+
+    public static &lt;T&gt; R&lt;T&gt; fail(int code, String message) {
+        R&lt;T&gt; r = new R&lt;&gt;();
+        r.setCode(code);
+        r.setMessage(message);
+        return r;
+    }
+
+    public static &lt;T&gt; R&lt;T&gt; fail(String message) {
+        return fail(400, message);
+    }
+}</code></pre></article><article class='card excerpt'><h3>告警扫描任务</h3><p class='path'>yuweishi-boot/src/main/java/com/yuweishi/schedule/AlarmScanTask.java · 展示 45/130 行，其余实现未展开。</p><pre><code>package com.yuweishi.schedule;
+
+import com.yuweishi.common.enums.AlarmType;
+import com.yuweishi.common.enums.DeviceKind;
+import com.yuweishi.common.enums.OnlineStatus;
+import com.yuweishi.domain.entity.AlarmEvent;
+import com.yuweishi.domain.entity.AppMessage;
+import com.yuweishi.domain.entity.Device;
+import com.yuweishi.repository.AlarmEventRepository;
+import com.yuweishi.repository.AppMessageRepository;
+import com.yuweishi.repository.DeviceRepository;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Component;
+
+import java.time.LocalDateTime;
+
+@Slf4j
+@Component
+@RequiredArgsConstructor
+public class AlarmScanTask {
+    private final DeviceRepository deviceRepository;
+    private final AlarmEventRepository alarmEventRepository;
+    private final AppMessageRepository messageRepository;
+
+    @Scheduled(fixedDelayString = &quot;${yuweishi.alarm.scan-interval-ms:300000}&quot;)
+    public void scan() {
+        LocalDateTime meterStaleBefore = LocalDateTime.now().minusMinutes(15);
+        LocalDateTime gatewayStaleBefore = LocalDateTime.now().minusMinutes(30);
+        for (Device device : deviceRepository.findByDeleted(0)) {
+            if (device.getKind() == DeviceKind.LOCK) {
+                scanLock(device, gatewayStaleBefore);
+            } else if (device.getKind() == DeviceKind.ELECTRIC || device.getKind() == DeviceKind.WATER) {
+                if (device.getLastSeenAt() != null &amp;&amp; device.getLastSeenAt().isBefore(meterStaleBefore)
+                        &amp;&amp; device.getOnlineStatus() != OnlineStatus.OFFLINE) {
+                    device.setOnlineStatus(OnlineStatus.OFFLINE);
+                    deviceRepository.save(device);
+                }
+                if (device.getOnlineStatus() == OnlineStatus.OFFLINE) {
+                    raise(device, offlineType(device), &quot;设备离线&quot;);
+                }
+            }
+            if (device.getKind() != DeviceKind.LOCK &amp;&amp; device.getBatteryPercent() != null &amp;&amp; device.getBatteryPercent() &lt;= 20) {
+                raise(device, lowType(device), &quot;电量低于20%&quot;);</code></pre></article>
+    </section>
+  </main>
+  <footer>
+    <p>页面生成时间 2026-09-19 02:33:00</p>
+  </footer>
+</body>
+</html>
