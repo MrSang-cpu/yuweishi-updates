@@ -1,0 +1,65 @@
+:root {
+  --bg: #f3f1ec;
+  --ink: #1b1916;
+  --muted: #6a645c;
+  --card: #fffdf8;
+  --line: #e4ddd0;
+  --accent: #0f6b57;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: #f3f1ec;
+  color: var(--ink);
+  line-height: 1.6;
+}
+header, main, footer { width: min(1120px, calc(100% - 28px)); margin: 0 auto; }
+header { padding: 40px 0 12px; }
+nav { display: flex; flex-wrap: wrap; gap: 10px 16px; margin-top: 16px; }
+nav a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.eyebrow { letter-spacing: .16em; text-transform: uppercase; color: var(--accent); font-size: 12px; font-weight: 700; }
+h1 { font-size: 32px; margin: 8px 0; }
+.lead, footer, .hint, .path { color: var(--muted); }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin: 18px 0 22px; }
+.kpis div { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+.kpis b { display: block; font-size: 28px; }
+.card, .section { margin-bottom: 18px; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 24px;
+}
+h2 { margin: 0 0 12px; font-size: 20px; }
+h3 { font-size: 15px; color: var(--accent); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.timeline { list-style: none; padding: 0; margin: 0; }
+.timeline li { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.when { color: var(--muted); font-variant-numeric: tabular-nums; font-size: 13px; }
+.sha { color: var(--muted); font-size: 12px; }
+.files { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; }
+.files code, .chip { background: #f6f1e6; border-radius: 999px; padding: 2px 8px; font-size: 12px; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.tree, .excerpt pre {
+  background: #1f1c18;
+  color: #f4efe4;
+  padding: 16px;
+  border-radius: 12px;
+  overflow: auto;
+  font-size: 12.5px;
+  line-height: 1.45;
+  max-height: 520px;
+}
+.excerpt pre { user-select: none; }
+.verb { font-weight: 700; }
+.verb.get { color: #0f6b57; }
+.verb.post { color: #9a4d12; }
+.verb.patch, .verb.put { color: #1d4e89; }
+.verb.delete { color: #9b1c1c; }
+footer { padding: 8px 0 40px; font-size: 13px; }
+@media (max-width: 720px) {
+  h1 { font-size: 26px; }
+  .kpis b { font-size: 22px; }
+}
